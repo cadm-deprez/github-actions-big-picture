@@ -59,8 +59,8 @@ jobs:
     - run: ls -l
     - name: upload artifacts
       uses: actions/upload-pages-artifact@v3
-      #with:
-      #  path: './out'
+      with:
+        path: .
     - name: deploy
       id: deployment
       uses: actions/deploy-pages@v4
